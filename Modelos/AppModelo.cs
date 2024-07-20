@@ -27,6 +27,13 @@ namespace Modelos
             this.Comando.ExecuteNonQuery();
         }
 
+        public void Modificar()
+        {
+            string sql = $"UPDATE usuarios SET nombre = '{this.Nombre}', apellido = '{this.Apellido}' WHERE id = '{this.Id}'";
+            this.Comando.CommandText = sql;
+            this.Comando.ExecuteNonQuery();
+        }
+
         public List<AppModelo> ObtenerTodos()
         {
             List<AppModelo> usuarios = new List<AppModelo>();

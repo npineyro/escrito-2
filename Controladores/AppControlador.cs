@@ -29,7 +29,11 @@ namespace Controladores
 
         public static void Modificar(string id, string nombre, string apellido)
         {
-
+            AppModelo usuario = new AppModelo();
+            usuario.Id = Int32.Parse(id);
+            usuario.Nombre = nombre;
+            usuario.Apellido = apellido;
+            usuario.Modificar();
         }
 
 

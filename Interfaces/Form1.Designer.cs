@@ -41,8 +41,8 @@ namespace Interfaces
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.TextboxNombreMoficiacion = new System.Windows.Forms.TextBox();
-            this.TextboxIDMoficiacion = new System.Windows.Forms.TextBox();
+            this.TextboxNombreModificacion = new System.Windows.Forms.TextBox();
+            this.TextboxIDModificacion = new System.Windows.Forms.TextBox();
             this.TextboxApellidoModificacion = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -160,19 +160,19 @@ namespace Interfaces
             this.label4.TabIndex = 11;
             this.label4.Text = "Modificar Usuario";
             // 
-            // TextboxNombreMoficiacion
+            // TextboxNombreModificacion
             // 
-            this.TextboxNombreMoficiacion.Location = new System.Drawing.Point(102, 327);
-            this.TextboxNombreMoficiacion.Name = "TextboxNombreMoficiacion";
-            this.TextboxNombreMoficiacion.Size = new System.Drawing.Size(196, 20);
-            this.TextboxNombreMoficiacion.TabIndex = 12;
+            this.TextboxNombreModificacion.Location = new System.Drawing.Point(102, 327);
+            this.TextboxNombreModificacion.Name = "TextboxNombreModificacion";
+            this.TextboxNombreModificacion.Size = new System.Drawing.Size(196, 20);
+            this.TextboxNombreModificacion.TabIndex = 12;
             // 
-            // TextboxIDMoficiacion
+            // TextboxIDModificacion
             // 
-            this.TextboxIDMoficiacion.Location = new System.Drawing.Point(102, 379);
-            this.TextboxIDMoficiacion.Name = "TextboxIDMoficiacion";
-            this.TextboxIDMoficiacion.Size = new System.Drawing.Size(196, 20);
-            this.TextboxIDMoficiacion.TabIndex = 14;
+            this.TextboxIDModificacion.Location = new System.Drawing.Point(102, 379);
+            this.TextboxIDModificacion.Name = "TextboxIDModificacion";
+            this.TextboxIDModificacion.Size = new System.Drawing.Size(196, 20);
+            this.TextboxIDModificacion.TabIndex = 14;
             // 
             // TextboxApellidoModificacion
             // 
@@ -227,9 +227,9 @@ namespace Interfaces
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.TextboxIDMoficiacion);
+            this.Controls.Add(this.TextboxIDModificacion);
             this.Controls.Add(this.TextboxApellidoModificacion);
-            this.Controls.Add(this.TextboxNombreMoficiacion);
+            this.Controls.Add(this.TextboxNombreModificacion);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -264,8 +264,8 @@ namespace Interfaces
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox TextboxNombreMoficiacion;
-        private System.Windows.Forms.TextBox TextboxIDMoficiacion;
+        private System.Windows.Forms.TextBox TextboxNombreModificacion;
+        private System.Windows.Forms.TextBox TextboxIDModificacion;
         private System.Windows.Forms.TextBox TextboxApellidoModificacion;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;

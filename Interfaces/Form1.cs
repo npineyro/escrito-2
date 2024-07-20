@@ -43,7 +43,9 @@ namespace Interfaces
 
         private void BotonModificar_Click(object sender, EventArgs e)
         {
-
+            AppControlador.Modificar(TextboxIDModificacion.Text, TextboxNombreModificacion.Text, TextboxApellidoModificacion.Text);
+            MessageBox.Show("Usuario Modificado");
+            refrescarTablaDeDatos(); 
         }
     }
 }
