@@ -19,6 +19,12 @@ namespace Interfaces
             refrescarTablaDeDatos();
         }
 
+        private void refrescarTablaDeDatos()
+        {
+            tablaDeDatos.Refresh();
+            tablaDeDatos.DataSource = AppControlador.Listar();
+        }
+
         private void BotonGuardar_Click(object sender, EventArgs e)
         {
             AppControlador.Crear(TextboxNombre.Text, TextboxApellido.Text);
@@ -27,20 +33,17 @@ namespace Interfaces
             refrescarTablaDeDatos();
         }
 
-        private void refrescarTablaDeDatos()
-        {
-            tablaDeDatos.Refresh();
-            tablaDeDatos.DataSource = AppControlador.Listar();
-        }
-
         private void BotonEliminar_Click(object sender, EventArgs e)
         {
-            AppControlador.Eliminar(TextboxID.Text);
+            AppControlador.Eliminar(TextboxIDBaja.Text);
             refrescarTablaDeDatos();
             MessageBox.Show("Su usuario ha sido eliminado");
             refrescarTablaDeDatos();
         }
 
-        
+        private void BotonModificar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
