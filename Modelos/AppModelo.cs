@@ -14,7 +14,7 @@ namespace Modelos
 
         public void Guardar()
         {
-            string sql = $"INSERT INTO usuarios (nombre,apellido) VALUES('{this.Nombre}',{this.Apellido})";
+            string sql = $"INSERT INTO usuarios (nombre,apellido) VALUES('{this.Nombre}','{this.Apellido}')";
             this.Comando.CommandText = sql;
             this.Comando.ExecuteNonQuery();
 
@@ -40,7 +40,7 @@ namespace Modelos
                 AppModelo usuario = new AppModelo();
                 usuario.Id = Int32.Parse(this.Lector["Id"].ToString());
                 usuario.Nombre = this.Lector["Nombre"].ToString();
-                usuario.Apellido = this.Lector["Apelido"].ToString();
+                usuario.Apellido = this.Lector["Apellido"].ToString();
                 usuarios.Add(usuario);
             }
             return usuarios;

@@ -16,6 +16,7 @@ namespace Interfaces
         public Form1()
         {
             InitializeComponent();
+            refrescarTablaDeDatos();
         }
 
         private void BotonGuardar_Click(object sender, EventArgs e)
@@ -23,6 +24,7 @@ namespace Interfaces
             AppControlador.Crear(TextboxNombre.Text, TextboxApellido.Text);
             refrescarTablaDeDatos();
             MessageBox.Show("Su usuario ha sido creado");
+            refrescarTablaDeDatos();
         }
 
         private void refrescarTablaDeDatos()

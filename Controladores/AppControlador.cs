@@ -27,7 +27,7 @@ namespace Controladores
             usuario.Borrar();
         }
 
-        public static void Modificar(string id, string nombre, string precio)
+        public static void Modificar(string id, string nombre, string apellido)
         {
 
         }
