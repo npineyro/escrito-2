@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Controladores;
 
 namespace Interfaces
 {
@@ -17,29 +18,17 @@ namespace Interfaces
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void BotonGuardar_Click(object sender, EventArgs e)
         {
-
+            AppControlador.Crear(TextboxNombre.Text, TextboxApellido.Text);
+            refrescarTablaDeDatos();
+            MessageBox.Show("Su usuario ha sido creado");
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void refrescarTablaDeDatos()
         {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
+            tablaDeDatos.Refresh();
+            tablaDeDatos.DataSource = AppControlador.Listar();
         }
     }
 }
