@@ -35,12 +35,17 @@ namespace Interfaces
             this.Apellido = new System.Windows.Forms.Label();
             this.TextboxNombre = new System.Windows.Forms.TextBox();
             this.TextboxApellido = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.BotonEliminar = new System.Windows.Forms.Button();
+            this.TextboxID = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tablaDeDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // BotonGuardar
             // 
-            this.BotonGuardar.Location = new System.Drawing.Point(96, 152);
+            this.BotonGuardar.Location = new System.Drawing.Point(96, 98);
             this.BotonGuardar.Name = "BotonGuardar";
             this.BotonGuardar.Size = new System.Drawing.Size(75, 23);
             this.BotonGuardar.TabIndex = 0;
@@ -68,7 +73,7 @@ namespace Interfaces
             // Apellido
             // 
             this.Apellido.AutoSize = true;
-            this.Apellido.Location = new System.Drawing.Point(12, 91);
+            this.Apellido.Location = new System.Drawing.Point(12, 75);
             this.Apellido.Name = "Apellido";
             this.Apellido.Size = new System.Drawing.Size(44, 13);
             this.Apellido.TabIndex = 3;
@@ -83,16 +88,65 @@ namespace Interfaces
             // 
             // TextboxApellido
             // 
-            this.TextboxApellido.Location = new System.Drawing.Point(96, 88);
+            this.TextboxApellido.Location = new System.Drawing.Point(96, 72);
             this.TextboxApellido.Name = "TextboxApellido";
             this.TextboxApellido.Size = new System.Drawing.Size(196, 20);
             this.TextboxApellido.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(128, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Agregar Usuario";
+            // 
+            // BotonEliminar
+            // 
+            this.BotonEliminar.Location = new System.Drawing.Point(96, 212);
+            this.BotonEliminar.Name = "BotonEliminar";
+            this.BotonEliminar.Size = new System.Drawing.Size(75, 23);
+            this.BotonEliminar.TabIndex = 7;
+            this.BotonEliminar.Text = "Eliminar";
+            this.BotonEliminar.UseVisualStyleBackColor = true;
+            this.BotonEliminar.Click += new System.EventHandler(this.BotonEliminar_Click);
+            // 
+            // TextboxID
+            // 
+            this.TextboxID.Location = new System.Drawing.Point(96, 174);
+            this.TextboxID.Name = "TextboxID";
+            this.TextboxID.Size = new System.Drawing.Size(196, 20);
+            this.TextboxID.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(38, 177);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(18, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "ID";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(128, 148);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(82, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Eliminar Usuario";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(713, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.TextboxID);
+            this.Controls.Add(this.BotonEliminar);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.TextboxApellido);
             this.Controls.Add(this.TextboxNombre);
             this.Controls.Add(this.Apellido);
@@ -115,6 +169,11 @@ namespace Interfaces
         private System.Windows.Forms.Label Apellido;
         private System.Windows.Forms.TextBox TextboxNombre;
         private System.Windows.Forms.TextBox TextboxApellido;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button BotonEliminar;
+        private System.Windows.Forms.TextBox TextboxID;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

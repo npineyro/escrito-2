@@ -32,5 +32,15 @@ namespace Interfaces
             tablaDeDatos.Refresh();
             tablaDeDatos.DataSource = AppControlador.Listar();
         }
+
+        private void BotonEliminar_Click(object sender, EventArgs e)
+        {
+            AppControlador.Eliminar(TextboxID.Text);
+            refrescarTablaDeDatos();
+            MessageBox.Show("Su usuario ha sido eliminado");
+            refrescarTablaDeDatos();
+        }
+
+        
     }
 }
