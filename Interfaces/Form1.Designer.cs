@@ -48,6 +48,15 @@ namespace Interfaces
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.BotonModificar = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.BotonBuscar = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.TextboxBusquedaNombre = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.TextboxBusquedaID = new System.Windows.Forms.TextBox();
+            this.TextboxBusquedaApellido = new System.Windows.Forms.TextBox();
+            this.BotonLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tablaDeDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -218,11 +227,99 @@ namespace Interfaces
             this.BotonModificar.UseVisualStyleBackColor = true;
             this.BotonModificar.Click += new System.EventHandler(this.BotonModificar_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.DarkRed;
+            this.label8.ForeColor = System.Drawing.SystemColors.Control;
+            this.label8.Location = new System.Drawing.Point(843, 12);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(77, 13);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Buscar usuario";
+            // 
+            // BotonBuscar
+            // 
+            this.BotonBuscar.Location = new System.Drawing.Point(807, 124);
+            this.BotonBuscar.Name = "BotonBuscar";
+            this.BotonBuscar.Size = new System.Drawing.Size(75, 23);
+            this.BotonBuscar.TabIndex = 26;
+            this.BotonBuscar.Text = "Buscar";
+            this.BotonBuscar.UseVisualStyleBackColor = true;
+            this.BotonBuscar.Click += new System.EventHandler(this.BotonBuscar_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(723, 45);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(44, 13);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "Nombre";
+            // 
+            // TextboxBusquedaNombre
+            // 
+            this.TextboxBusquedaNombre.Location = new System.Drawing.Point(807, 42);
+            this.TextboxBusquedaNombre.Name = "TextboxBusquedaNombre";
+            this.TextboxBusquedaNombre.Size = new System.Drawing.Size(196, 20);
+            this.TextboxBusquedaNombre.TabIndex = 20;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(723, 101);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(18, 13);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "ID";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(723, 75);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(44, 13);
+            this.label10.TabIndex = 29;
+            this.label10.Text = "Apellido";
+            // 
+            // TextboxBusquedaID
+            // 
+            this.TextboxBusquedaID.Location = new System.Drawing.Point(807, 98);
+            this.TextboxBusquedaID.Name = "TextboxBusquedaID";
+            this.TextboxBusquedaID.Size = new System.Drawing.Size(196, 20);
+            this.TextboxBusquedaID.TabIndex = 28;
+            // 
+            // TextboxBusquedaApellido
+            // 
+            this.TextboxBusquedaApellido.Location = new System.Drawing.Point(807, 72);
+            this.TextboxBusquedaApellido.Name = "TextboxBusquedaApellido";
+            this.TextboxBusquedaApellido.Size = new System.Drawing.Size(196, 20);
+            this.TextboxBusquedaApellido.TabIndex = 27;
+            // 
+            // BotonLimpiar
+            // 
+            this.BotonLimpiar.Location = new System.Drawing.Point(807, 155);
+            this.BotonLimpiar.Name = "BotonLimpiar";
+            this.BotonLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.BotonLimpiar.TabIndex = 31;
+            this.BotonLimpiar.Text = "Limpiar";
+            this.BotonLimpiar.UseVisualStyleBackColor = true;
+            this.BotonLimpiar.Click += new System.EventHandler(this.BotonLimpiar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 450);
+            this.ClientSize = new System.Drawing.Size(1050, 450);
+            this.Controls.Add(this.BotonLimpiar);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.TextboxBusquedaID);
+            this.Controls.Add(this.TextboxBusquedaApellido);
+            this.Controls.Add(this.BotonBuscar);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.TextboxBusquedaNombre);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.BotonModificar);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
@@ -271,6 +368,15 @@ namespace Interfaces
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button BotonModificar;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button BotonBuscar;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox TextboxBusquedaNombre;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox TextboxBusquedaID;
+        private System.Windows.Forms.TextBox TextboxBusquedaApellido;
+        private System.Windows.Forms.Button BotonLimpiar;
     }
 }
 

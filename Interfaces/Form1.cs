@@ -47,5 +47,17 @@ namespace Interfaces
             MessageBox.Show("Usuario Modificado");
             refrescarTablaDeDatos(); 
         }
+
+        private void BotonBuscar_Click(object sender, EventArgs e)
+        {
+            (tablaDeDatos.DataSource as DataTable).DefaultView.RowFilter = string.Format("(nombre) LIKE '%{0}%'", TextboxBusquedaNombre.Text);
+            (tablaDeDatos.DataSource as DataTable).DefaultView.RowFilter = string.Format("(apellido) LIKE '%{0}%'", TextboxBusquedaApellido.Text);
+            (tablaDeDatos.DataSource as DataTable).DefaultView.RowFilter = string.Format("id = {0}", TextboxBusquedaID.Text);
+        }
+
+        private void BotonLimpiar_Click(object sender, EventArgs e)
+        {
+            refrescarTablaDeDatos();
+        }
     }
 }
