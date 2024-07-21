@@ -57,6 +57,7 @@ namespace Interfaces
             this.TextboxBusquedaID = new System.Windows.Forms.TextBox();
             this.TextboxBusquedaApellido = new System.Windows.Forms.TextBox();
             this.BotonLimpiar = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tablaDeDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -171,21 +172,21 @@ namespace Interfaces
             // 
             // TextboxNombreModificacion
             // 
-            this.TextboxNombreModificacion.Location = new System.Drawing.Point(102, 327);
+            this.TextboxNombreModificacion.Location = new System.Drawing.Point(102, 358);
             this.TextboxNombreModificacion.Name = "TextboxNombreModificacion";
             this.TextboxNombreModificacion.Size = new System.Drawing.Size(196, 20);
             this.TextboxNombreModificacion.TabIndex = 12;
             // 
             // TextboxIDModificacion
             // 
-            this.TextboxIDModificacion.Location = new System.Drawing.Point(102, 379);
+            this.TextboxIDModificacion.Location = new System.Drawing.Point(102, 332);
             this.TextboxIDModificacion.Name = "TextboxIDModificacion";
             this.TextboxIDModificacion.Size = new System.Drawing.Size(196, 20);
             this.TextboxIDModificacion.TabIndex = 14;
             // 
             // TextboxApellidoModificacion
             // 
-            this.TextboxApellidoModificacion.Location = new System.Drawing.Point(102, 353);
+            this.TextboxApellidoModificacion.Location = new System.Drawing.Point(102, 384);
             this.TextboxApellidoModificacion.Name = "TextboxApellidoModificacion";
             this.TextboxApellidoModificacion.Size = new System.Drawing.Size(196, 20);
             this.TextboxApellidoModificacion.TabIndex = 13;
@@ -193,7 +194,7 @@ namespace Interfaces
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 356);
+            this.label5.Location = new System.Drawing.Point(18, 387);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 13);
             this.label5.TabIndex = 16;
@@ -202,7 +203,7 @@ namespace Interfaces
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(18, 330);
+            this.label6.Location = new System.Drawing.Point(18, 361);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 13);
             this.label6.TabIndex = 15;
@@ -211,7 +212,7 @@ namespace Interfaces
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(18, 382);
+            this.label7.Location = new System.Drawing.Point(18, 335);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(18, 13);
             this.label7.TabIndex = 17;
@@ -231,16 +232,17 @@ namespace Interfaces
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.DarkRed;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.Control;
             this.label8.Location = new System.Drawing.Point(843, 12);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(77, 13);
+            this.label8.Size = new System.Drawing.Size(91, 13);
             this.label8.TabIndex = 19;
             this.label8.Text = "Buscar usuario";
             // 
             // BotonBuscar
             // 
-            this.BotonBuscar.Location = new System.Drawing.Point(807, 124);
+            this.BotonBuscar.Location = new System.Drawing.Point(805, 235);
             this.BotonBuscar.Name = "BotonBuscar";
             this.BotonBuscar.Size = new System.Drawing.Size(75, 23);
             this.BotonBuscar.TabIndex = 26;
@@ -251,7 +253,7 @@ namespace Interfaces
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(723, 45);
+            this.label11.Location = new System.Drawing.Point(721, 156);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(44, 13);
             this.label11.TabIndex = 23;
@@ -259,7 +261,7 @@ namespace Interfaces
             // 
             // TextboxBusquedaNombre
             // 
-            this.TextboxBusquedaNombre.Location = new System.Drawing.Point(807, 42);
+            this.TextboxBusquedaNombre.Location = new System.Drawing.Point(805, 153);
             this.TextboxBusquedaNombre.Name = "TextboxBusquedaNombre";
             this.TextboxBusquedaNombre.Size = new System.Drawing.Size(196, 20);
             this.TextboxBusquedaNombre.TabIndex = 20;
@@ -267,7 +269,7 @@ namespace Interfaces
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(723, 101);
+            this.label9.Location = new System.Drawing.Point(721, 212);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(18, 13);
             this.label9.TabIndex = 30;
@@ -276,7 +278,7 @@ namespace Interfaces
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(723, 75);
+            this.label10.Location = new System.Drawing.Point(721, 186);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(44, 13);
             this.label10.TabIndex = 29;
@@ -284,21 +286,21 @@ namespace Interfaces
             // 
             // TextboxBusquedaID
             // 
-            this.TextboxBusquedaID.Location = new System.Drawing.Point(807, 98);
+            this.TextboxBusquedaID.Location = new System.Drawing.Point(805, 209);
             this.TextboxBusquedaID.Name = "TextboxBusquedaID";
             this.TextboxBusquedaID.Size = new System.Drawing.Size(196, 20);
             this.TextboxBusquedaID.TabIndex = 28;
             // 
             // TextboxBusquedaApellido
             // 
-            this.TextboxBusquedaApellido.Location = new System.Drawing.Point(807, 72);
+            this.TextboxBusquedaApellido.Location = new System.Drawing.Point(805, 183);
             this.TextboxBusquedaApellido.Name = "TextboxBusquedaApellido";
             this.TextboxBusquedaApellido.Size = new System.Drawing.Size(196, 20);
             this.TextboxBusquedaApellido.TabIndex = 27;
             // 
             // BotonLimpiar
             // 
-            this.BotonLimpiar.Location = new System.Drawing.Point(807, 155);
+            this.BotonLimpiar.Location = new System.Drawing.Point(805, 266);
             this.BotonLimpiar.Name = "BotonLimpiar";
             this.BotonLimpiar.Size = new System.Drawing.Size(75, 23);
             this.BotonLimpiar.TabIndex = 31;
@@ -306,11 +308,23 @@ namespace Interfaces
             this.BotonLimpiar.UseVisualStyleBackColor = true;
             this.BotonLimpiar.Click += new System.EventHandler(this.BotonLimpiar_Click);
             // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(724, 62);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(314, 59);
+            this.label12.TabIndex = 32;
+            this.label12.Text = "Se puede hacer busqueda tanto solo usando un campo, o combinando varios. Ejemplo," +
+    " id y apellido\r\n";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1050, 450);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.BotonLimpiar);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
@@ -377,6 +391,7 @@ namespace Interfaces
         private System.Windows.Forms.TextBox TextboxBusquedaID;
         private System.Windows.Forms.TextBox TextboxBusquedaApellido;
         private System.Windows.Forms.Button BotonLimpiar;
+        private System.Windows.Forms.Label label12;
     }
 }
 
